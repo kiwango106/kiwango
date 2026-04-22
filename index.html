@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ukhty Sallyh | Luxury Slippers & Simple Elegance</title>
     <style>
-        /* Color Palette: Emerald, Gold, and Soft Cream */
         :root {
             --primary-color: #064e3b; /* Deep Emerald */
             --accent-color: #d4af37;  /* Metallic Gold */
@@ -14,7 +13,6 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Playfair Display', serif; }
-        
         body { background-color: var(--bg-color); color: var(--text-dark); }
         
         /* Navigation */
@@ -25,23 +23,23 @@
             border-bottom: 4px solid var(--accent-color);
         }
         .logo { 
-            font-size: 2rem; 
+            font-size: 2.2rem; 
             letter-spacing: 3px; 
             color: var(--accent-color); 
             text-transform: uppercase;
             font-weight: bold;
         }
 
-        /* Hero */
+        /* Hero Section */
         .hero { 
             height: 350px; 
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                        url('../Pictures/Screenshots/Screenshot\ 2026-04-22\ 053641.png') center/cover;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('./img/Screenshot 2026-04-22 053641.png') center/cover;
             display: flex; align-items: center; justify-content: center; color: #fff;
         }
-        .hero h1 { font-size: 3rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+        .hero h1 { font-size: 3rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); text-align: center; }
 
-        /* Sections */
+        /* Container & Sections */
         .container { max-width: 1200px; margin: 60px auto; padding: 0 20px; }
         .section-header { 
             border-left: 5px solid var(--accent-color); 
@@ -49,28 +47,46 @@
             margin-bottom: 30px; 
             font-size: 1.8rem;
             color: var(--primary-color);
+            text-transform: uppercase;
         }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 60px; }
         
-        .card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: 0.3s; position: relative; }
+        /* Product Card */
+        .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); transition: 0.3s; }
         .card:hover { transform: translateY(-10px); }
-        
-        .card img { width: 100%; height: 320px; object-fit: cover; }
+        .card img { width: 100%; height: 350px; object-fit: cover; }
         
         .info { padding: 20px; text-align: center; }
-        .info h3 { font-size: 1.3rem; margin-bottom: 10px; color: var(--primary-color); }
-        .price { color: var(--accent-color); font-weight: bold; font-size: 1.3rem; }
+        .info h3 { font-size: 1.3rem; margin-bottom: 15px; color: var(--primary-color); }
 
-        footer { background: var(--primary-color); color: white; text-align: center; padding: 40px; margin-top: 50px; }
+        /* Contact Button */
+        .order-btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--accent-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 0.9rem;
+            border: 1px solid var(--accent-color);
+            transition: 0.3s;
+        }
+        .order-btn:hover { background: var(--accent-color); color: var(--primary-color); }
+
+        /* Footer */
+        footer { background: var(--primary-color); color: white; text-align: center; padding: 50px 20px; margin-top: 50px; }
+        .footer-contact { font-size: 1.5rem; color: var(--accent-color); margin: 15px 0; font-family: 'Poppins', sans-serif; }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav>
         <div class="logo">UKHTY SALLYH</div>
-        <p style="color: white; font-family: 'Poppins'; font-size: 0.9rem; margin-top: 5px;">Luxury Women's Collection</p>
+        <p style="color: white; font-family: 'Poppins'; font-size: 0.9rem; margin-top: 5px; letter-spacing: 1px;">Luxury Women's Collection</p>
     </nav>
 
     <header class="hero">
@@ -84,15 +100,15 @@
             <div class="card">
                 <img src="./img/Screenshot 2026-04-22 054301.png" alt="Plush Slipper">
                 <div class="info">
-                    <h3>Velvet Royal Slipper</h3>
-                    <p class="price">$65.00</p>
+                    <h3>slippers</h3>
+                    <a href="https://wa.me/255674809983" class="order-btn">Order via WhatsApp</a>
                 </div>
             </div>
             <div class="card">
-                <img src="" alt="Silk Slide">
+                <img src="./img/Screenshot 2026-04-22 054224.png" alt="Silk Slide">
                 <div class="info">
-                    <h3>Golden Silk Slide</h3>
-                    <p class="price">$50.00</p>
+                    <h3>slippers for you</h3>
+                    <a href="https://wa.me/255674809983" class="order-btn">Order via WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -100,24 +116,26 @@
         <h2 class="section-header">Simple & Elegant Shoes</h2>
         <div class="grid">
             <div class="card">
-                <img src="./img/Screenshot 2026-04-22 053641.png" alt="Blue Elegance">
+                <img src="./img/Screenshot 2026-04-22 053641.png" alt="Classic Pump">
                 <div class="info">
-                    <h3>Classic Pointed Pump</h3>
-                    <p class="price">$85.00</p>
+                    <h3>Classic slipppers
+
+                    </h3>
+                    <a href="https://wa.me/255674809983" class="order-btn">Order via WhatsApp</a>
                 </div>
             </div>
             <div class="card">
-                <img src="./img/Screenshot 2026-04-22 053641.png" alt="Soft Nude Shoe">
+                <img src="./img/Screenshot 2026-04-22 054153.png" alt="Pastel Loafer">
                 <div class="info">
-                    <h3>Casual Pastel Loafer</h3>
-                    <p class="price">$70.00</p>
+                    <h3>slippers for best walking style</h3>
+                    <a href="https://wa.me/255674809983" class="order-btn">Order via WhatsApp</a>
                 </div>
             </div>
             <div class="card">
-                <img src="./img/Screenshot 2026-04-22 053641.png" alt="Modern Minimalist">
+                <img src="./img/Screenshot 2026-04-22 054224.png" alt="Modern Minimal">
                 <div class="info">
-                    <h3>Modern White Minimal</h3>
-                    <p class="price">$95.00</p>
+                    <h3>for all laddies</h3>
+                    <a href="https://wa.me/255674809983" class="order-btn">Order via WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -125,8 +143,9 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Ukhty Sallyh Luxury. All Rights Reserved.</p>
-        <p style="font-family: 'Poppins'; font-size: 0.8rem; margin-top: 10px; color: #aaa;">Premium Quality | Fast Delivery</p>
+        <p>Contact Us for Orders:</p>
+        <div class="footer-contact">0674809983</div>
+        <p style="font-family: 'Poppins'; font-size: 0.8rem; color: #aaa;">&copy; 2026 Ukhty Sallyh Luxury. All Rights Reserved.</p>
     </footer>
 
 </body>
