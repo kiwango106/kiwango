@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukhty Sallyh | Luxury Slippers & Simple Elegance</title>
+    <style>
+        /* Color Palette: Emerald, Gold, and Soft Cream */
+        :root {
+            --primary-color: #064e3b; /* Deep Emerald */
+            --accent-color: #d4af37;  /* Metallic Gold */
+            --bg-color: #fffaf5;
+            --text-dark: #1a1a1a;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Playfair Display', serif; }
+        
+        body { background-color: var(--bg-color); color: var(--text-dark); }
+        
+        /* Navigation */
+        nav { 
+            background: var(--primary-color); 
+            padding: 25px 5%; 
+            text-align: center;
+            border-bottom: 4px solid var(--accent-color);
+        }
+        .logo { 
+            font-size: 2rem; 
+            letter-spacing: 3px; 
+            color: var(--accent-color); 
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /* Hero */
+        .hero { 
+            height: 350px; 
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('../Pictures/Screenshots/Screenshot\ 2026-04-22\ 053641.png') center/cover;
+            display: flex; align-items: center; justify-content: center; color: #fff;
+        }
+        .hero h1 { font-size: 3rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+
+        /* Sections */
+        .container { max-width: 1200px; margin: 60px auto; padding: 0 20px; }
+        .section-header { 
+            border-left: 5px solid var(--accent-color); 
+            padding-left: 15px; 
+            margin-bottom: 30px; 
+            font-size: 1.8rem;
+            color: var(--primary-color);
+        }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px; }
+        
+        .card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: 0.3s; position: relative; }
+        .card:hover { transform: translateY(-10px); }
+        
+        .card img { width: 100%; height: 320px; object-fit: cover; }
+        
+        .info { padding: 20px; text-align: center; }
+        .info h3 { font-size: 1.3rem; margin-bottom: 10px; color: var(--primary-color); }
+        .price { color: var(--accent-color); font-weight: bold; font-size: 1.3rem; }
+
+        footer { background: var(--primary-color); color: white; text-align: center; padding: 40px; margin-top: 50px; }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">UKHTY SALLYH</div>
+        <p style="color: white; font-family: 'Poppins'; font-size: 0.9rem; margin-top: 5px;">Luxury Women's Collection</p>
+    </nav>
+
+    <header class="hero">
+        <h1>Elegance In Every Step</h1>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="section-header">Luxury Slippers</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="./img/Screenshot 2026-04-22 054301.png" alt="Plush Slipper">
+                <div class="info">
+                    <h3>Velvet Royal Slipper</h3>
+                    <p class="price">$65.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="" alt="Silk Slide">
+                <div class="info">
+                    <h3>Golden Silk Slide</h3>
+                    <p class="price">$50.00</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-header">Simple & Elegant Shoes</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="./img/Screenshot 2026-04-22 053641.png" alt="Blue Elegance">
+                <div class="info">
+                    <h3>Classic Pointed Pump</h3>
+                    <p class="price">$85.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/Screenshot 2026-04-22 053641.png" alt="Soft Nude Shoe">
+                <div class="info">
+                    <h3>Casual Pastel Loafer</h3>
+                    <p class="price">$70.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/Screenshot 2026-04-22 053641.png" alt="Modern Minimalist">
+                <div class="info">
+                    <h3>Modern White Minimal</h3>
+                    <p class="price">$95.00</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ukhty Sallyh Luxury. All Rights Reserved.</p>
+        <p style="font-family: 'Poppins'; font-size: 0.8rem; margin-top: 10px; color: #aaa;">Premium Quality | Fast Delivery</p>
+    </footer>
+
+</body>
+</html>
